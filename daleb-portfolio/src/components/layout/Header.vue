@@ -2,7 +2,7 @@
   <header>
     <div class="header__logo">
       <a href="/">
-        <img src="/db-logo.svg" alt="Dale's Logo" />
+        <img src="/src/assets/db-logo-light.svg" alt="Dale's Logo" />
       </a>
     </div>
     <nav>
@@ -22,7 +22,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  //   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid $dark-text;
 
   nav {
     flex: 1;
