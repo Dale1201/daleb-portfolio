@@ -60,7 +60,6 @@ header {
   background: none;
   border: none;
   font-size: 1.5rem;
-  // color: $dark-text;
   width: 3rem;
   cursor: pointer;
   transition: color 0.2s ease-in-out;
