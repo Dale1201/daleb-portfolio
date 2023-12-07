@@ -1,5 +1,13 @@
 <script setup>
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
+
+// Logo logic
+const logo = ref("/src/assets/db-logo-light.svg");
+onMounted(() => {
+  if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    logo.value = "/src/assets/db-logo-dark.svg";
+  }
+});
 
 const mobileNavVisible = ref(false);
 </script>
@@ -10,7 +18,7 @@ const mobileNavVisible = ref(false);
     <div class="header__logo">
       <button class="toggle fa-solid fa-bars fa-2xl" @click="mobileNavVisible = !mobileNavVisible"></button>
       <a href="/">
-        <img src="/src/assets/db-logo-light.svg" alt="Dale's Logo" />
+        <img :src="logo" alt="Dale's Logo" />
       </a>
     </div>
     <nav class="main-nav">
