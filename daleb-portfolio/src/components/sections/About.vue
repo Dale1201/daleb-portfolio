@@ -1,24 +1,24 @@
-<script setup>
-import BaseButton from "../UI/BaseButton.vue";
-</script>
-
 <template>
   <section>
     <div class="image-about">
       <div class="img-container">
         <img src="/src/assets/placeholder.webp" alt="placeholder" />
       </div>
-      <BaseButton>Read More</BaseButton>
+      <base-button>Read More</base-button>
     </div>
     <div class="about-me">
-      <h1>About Me</h1>
+      <h1>Hello I'm Dale</h1>
       <p>
-        Hello my name is Dale. I am <span>Software Engineering</span> and <span>Statistics</span> graduate. <br /><br />
-        Currently I am most proficient with Frontend technologies but my goal is to continue learning and become a more
-        well rounded Engineer. <br /><br />
+        I am <span>Software Engineering</span> and <span>Statistics</span> graduate. <br /><br />
+        I am most proficient with Frontend technologies but my goal is to continue learning and become a more well
+        rounded Software Engineer. <br /><br />
         I am currently looking for a graduate role in <span>Software Engineering</span> where I can work with a team of
         developers to build amazing products.
       </p>
+      <h2 class="social-header">Socials</h2>
+      <a class="linkedin-logo" href="//www.linkedin.com/in/dale-beniga-800871175"
+        ><i class="fa-brands fa-linkedin"></i
+      ></a>
     </div>
   </section>
 </template>
@@ -53,6 +53,11 @@ h1 {
   }
 }
 
+.social-header {
+  @include sub-heading;
+  margin-top: 2rem;
+}
+
 .image-about {
   align-self: center;
   display: flex;
@@ -74,6 +79,21 @@ h1 {
   }
   @media (min-width: 60rem) {
     max-width: 40rem;
+  }
+}
+
+.linkedin-logo {
+  font-size: 1rem;
+  color: white;
+  background: transparent;
+  padding: 0;
+  vertical-align: middle;
+
+  i {
+    vertical-align: middle;
+    font-size: 2rem;
+    // color: #0077b5;
+    color: gray;
   }
 }
 </style>
