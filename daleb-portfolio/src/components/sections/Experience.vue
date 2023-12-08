@@ -56,6 +56,7 @@ function decrementCarousel() {
     <div class="info-badge-container">
       <InfoBadge> 2022 - 2023 </InfoBadge>
       <InfoBadge> Frontend Development </InfoBadge>
+      <InfoBadge> Agile </InfoBadge>
     </div>
     <div class="content">
       <p>
@@ -121,7 +122,6 @@ h2 {
 
 .content {
   padding: 1rem 0;
-  max-width: 100rem;
   p {
     max-width: 30rem;
   }
@@ -163,7 +163,7 @@ h2 {
 }
 
 %quote {
-  font-size: 3rem;
+  font-size: 4rem;
   height: 3.5rem;
   font-weight: 700;
   color: $clr-accent;

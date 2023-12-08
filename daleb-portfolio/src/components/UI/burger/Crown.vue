@@ -19,7 +19,7 @@
   top: 50px;
   transform: translate(-50%, -50%);
   height: 100px;
-  width: 250px;
+  width: 300px;
   border-radius: 200px 200px 0 0;
 }
 

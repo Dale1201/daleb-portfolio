@@ -1,3 +1,7 @@
+<script setup>
+import WebsiteLogo from "../UI/WebsiteLogo.vue";
+</script>
+
 <template>
   <section>
     <div class="image-about">
@@ -16,9 +20,7 @@
         developers to build amazing products.
       </p>
       <h2 class="social-header">Socials</h2>
-      <a class="linkedin-logo" href="//www.linkedin.com/in/dale-beniga-800871175"
-        ><i class="fa-brands fa-linkedin"></i
-      ></a>
+      <WebsiteLogo url="//www.linkedin.com/in/dale-beniga-800871175" icon="fa-brands fa-linkedin" />
     </div>
   </section>
 </template>
@@ -43,8 +45,7 @@ h1 {
 .about-me {
   padding: 2rem;
   span {
-    color: $clr-secondary;
-    font-weight: 500;
+    @include special-text;
   }
 
   @media (min-width: 60rem) {
@@ -79,21 +80,6 @@ h1 {
   }
   @media (min-width: 60rem) {
     max-width: 40rem;
-  }
-}
-
-.linkedin-logo {
-  font-size: 1rem;
-  color: white;
-  background: transparent;
-  padding: 0;
-  vertical-align: middle;
-
-  i {
-    vertical-align: middle;
-    font-size: 2rem;
-    // color: #0077b5;
-    color: gray;
   }
 }
 </style>
