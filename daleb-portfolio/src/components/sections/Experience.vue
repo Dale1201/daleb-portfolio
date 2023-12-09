@@ -71,7 +71,7 @@ function decrementCarousel() {
 
       <div class="carousel" style="margin-top: 3rem">
         <div class="carousel__content">
-          <button class="carousel_arrow" @click="decrementCarousel">&lt</button>
+          <!-- <button class="carousel_arrow" @click="decrementCarousel">&lt</button> -->
 
           <div class="carousel__image">
             <div class="img-container">
@@ -84,7 +84,7 @@ function decrementCarousel() {
             <p>{{ carouselItems[carouselIndex].text }}</p>
             <div class="end-quote">”</div>
           </div>
-          <button class="carousel_arrow" @click="incrementCarousel">&gt</button>
+          <!-- <button class="carousel_arrow" @click="incrementCarousel">&gt</button> -->
         </div>
 
         <div class="carousel__dots">
@@ -96,6 +96,19 @@ function decrementCarousel() {
           ></span>
         </div>
       </div>
+    </div>
+    <h2 style="padding-top: 3rem">Data Science Intern - Digicor</h2>
+    <div class="info-badge-container">
+      <InfoBadge> 2021 </InfoBadge>
+      <InfoBadge> Data Science </InfoBadge>
+      <InfoBadge> SEO </InfoBadge>
+    </div>
+    <div class="content" style="padding-bottom: 5rem">
+      <p>Digicor is a leading provider of high-performance computing solutions. At Digicor my role included:</p>
+      <ul>
+        <li>Made dashboards with google data studio to assist in finding useful insights for DiGiCOR's SEO campaign</li>
+        <li>Created report to assist marketing department to set benchmarks and goals.</li>
+      </ul>
     </div>
   </section>
 </template>
@@ -132,7 +145,6 @@ h2 {
   flex-direction: column;
   align-items: center;
   min-height: 23rem;
-
   @media (min-width: 40rem) {
     flex-direction: row;
     justify-content: center;

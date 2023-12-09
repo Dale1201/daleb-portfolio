@@ -8,10 +8,13 @@ import WebsiteLogo from "../UI/WebsiteLogo.vue";
       <div class="img-container">
         <img src="/src/assets/placeholder.webp" alt="placeholder" />
       </div>
-      <base-button>Read More</base-button>
+      <base-button class="call-to-action-button">Read More</base-button>
     </div>
     <div class="about-me">
-      <h1>Hello I'm Dale</h1>
+      <h1>
+        Hello I'm
+        <p class="dale-text">Dale</p>
+      </h1>
       <p>
         I am <span>Software Engineering</span> and <span>Statistics</span> graduate. <br /><br />
         I am most proficient with Frontend technologies but my goal is to continue learning and become a more well
@@ -42,9 +45,14 @@ h1 {
   text-align: center;
 }
 
+.call-to-action-button {
+  animation: normal 1s ease-in-out 0s 1 fadeIn;
+}
+
 .about-me {
   padding: 2rem;
-  span {
+  animation: normal 1s ease-in-out 0s 1 slideInFromRight;
+  p span {
     @include special-text;
   }
 
@@ -52,6 +60,11 @@ h1 {
     max-width: 30rem;
     padding-top: 8rem;
   }
+}
+
+.dale-text {
+  display: inline-block;
+  animation: normal 1s ease-in-out 1.5s 1 shake, normal 0.5s ease-in-out 1s 1 jumpUp;
 }
 
 .social-header {
@@ -75,6 +88,7 @@ h1 {
 .img-container {
   width: 100%;
   max-width: 40rem;
+  animation: normal 1s ease-in-out 0s 1 slideInFromLeft;
   @media (min-width: 40rem) {
     padding: 1rem;
   }
