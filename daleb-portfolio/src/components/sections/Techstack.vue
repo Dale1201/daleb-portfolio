@@ -3,7 +3,7 @@ import Burger from "../UI/burger/Burger.vue";
 </script>
 
 <template>
-  <section>
+  <section id="technologies">
     <h1>Techstack</h1>
     <Burger />
   </section>

@@ -3,7 +3,7 @@ import WebsiteLogo from "../UI/WebsiteLogo.vue";
 </script>
 
 <template>
-  <section>
+  <section id="about-me">
     <div class="image-about">
       <div class="img-container">
         <img src="/src/assets/placeholder.webp" alt="placeholder" />

@@ -35,19 +35,19 @@ const mobileNavVisible = ref(false);
     </div>
     <nav class="main-nav">
       <ul>
-        <li><a href="/">About me</a></li>
-        <li><a href="/projects">Experience</a></li>
-        <li><a href="/about">Projects</a></li>
-        <li><a href="/about">Technologies</a></li>
+        <li><a href="#about-me">About me</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#technologies">Technologies</a></li>
       </ul>
     </nav>
   </header>
   <nav class="mobile-nav" v-if="mobileNavVisible">
     <ul>
-      <li><a href="/">About me</a></li>
-      <li><a href="/projects">Experience</a></li>
-      <li><a href="/about">Projects</a></li>
-      <li><a href="/about">Technologies</a></li>
+      <li><a href="#about-me">About me</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#technologies">Technologies</a></li>
     </ul>
   </nav>
 </template>

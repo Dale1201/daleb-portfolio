@@ -50,7 +50,7 @@ function decrementCarousel() {
 </script>
 
 <template>
-  <section>
+  <section id="experience">
     <h1>Experience</h1>
     <h2>Software Engineer Intern - Anywise</h2>
     <div class="info-badge-container">
