@@ -2,11 +2,15 @@
 defineProps({
   url: String,
   icon: String,
+  colour: {
+    type: String,
+    default: "gray",
+  },
 });
 </script>
 
 <template>
-  <a :href="url"><i :class="icon"></i></a>
+  <a :href="url"><i :class="icon" :style="{ color: colour }"></i></a>
 </template>
 
 <style scoped lang="scss">

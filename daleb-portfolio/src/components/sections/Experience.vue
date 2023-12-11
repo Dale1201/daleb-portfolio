@@ -131,6 +131,7 @@ h2 {
 .info-badge-container {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .content {
