@@ -18,17 +18,17 @@ const carouselItems = ref([
   {
     title: "Shane Arnold - Senior Architect",
     text: "Dale is amazing, Dale is amazing. Dale is amazing. Dale is amazing. Dale is amazing. Dale is amazing",
-    image: "/src/assets/anywise/shane.png",
+    image: "/anywise/shane.png",
   },
   {
     title: "Christopher Dennis - Senior Consultant",
     text: "Dale is a ball of sunshine",
-    image: "/src/assets/anywise/chrisd.png",
+    image: "/anywise/chrisd.png",
   },
   {
     title: "Placeholder",
     text: "Placeholder",
-    image: "/src/assets/placeholder.webp",
+    image: "/placeholder.webp",
   },
 ]);
 

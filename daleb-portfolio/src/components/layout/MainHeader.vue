@@ -2,7 +2,6 @@
 import { computed, onMounted, ref } from "vue";
 
 // Logo logic
-// const logo = ref("/src/assets/db-logo-light.svg");
 const colourScheme = ref("light");
 onMounted(() => {
   if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
@@ -15,9 +14,9 @@ onMounted(() => {
 
 const logo = computed(() => {
   if (colourScheme.value === "dark") {
-    return "/src/assets/db-logo-dark.svg";
+    return "/db-logo-dark.svg";
   } else {
-    return "/src/assets/db-logo-light.svg";
+    return "/db-logo-light.svg";
   }
 });
 

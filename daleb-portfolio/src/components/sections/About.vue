@@ -6,7 +6,7 @@ import WebsiteLogo from "../UI/WebsiteLogo.vue";
   <section id="about-me">
     <div class="image-about">
       <div class="img-container">
-        <img src="/src/assets/placeholder.webp" alt="placeholder" />
+        <img src="/placeholder.webp" alt="placeholder" />
       </div>
       <base-button class="call-to-action-button">Read More</base-button>
     </div>

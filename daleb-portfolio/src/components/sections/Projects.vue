@@ -16,9 +16,9 @@ onUnmounted(() => {
 // Carousel logic
 const carouselIndex = ref(0);
 const carouselItems = ref([
-  "/src/assets/weather-booking-app/wba-home.png",
-  "/src/assets/weather-booking-app/wba-booking-confirm.png",
-  "/src/assets/weather-booking-app/wba-booking-details.png",
+  "/weather-booking-app/wba-home.png",
+  "/weather-booking-app/wba-booking-confirm.png",
+  "/weather-booking-app/wba-booking-details.png",
 ]);
 
 function incrementCarousel() {
@@ -45,7 +45,7 @@ function incrementCarousel() {
     <div class="booking-app-content">
       <div style="display: flex; flex-direction: column; align-items: center">
         <div class="logo-container">
-          <img src="/src/assets/weather-booking-app/mr_bluesky_logo.png" alt="Mr Bluesky" />
+          <img src="/weather-booking-app/mr_bluesky_logo.png" alt="Mr Bluesky" />
         </div>
         <p class="booking-blurb">
           Have a special occasion coming up? <br />
@@ -56,9 +56,9 @@ function incrementCarousel() {
       </div>
       <div style="display: flex; justify-content: center">
         <div class="img-container" v-if="false">
-          <img src="/src/assets/weather-booking-app/wba-home.png" alt="Mr Bluesky" />
+          <img src="/weather-booking-app/wba-home.png" alt="Mr Bluesky" />
         </div>
-        <div style="display: flex; flex-direction: column; max-height: 17rem">
+        <div style="display: flex; flex-direction: column">
           <div class="img-container">
             <img :src="carouselItems[carouselIndex]" alt="Mr Bluesky" />
           </div>
@@ -112,6 +112,9 @@ h2 {
   }
 }
 
+.logo-container {
+  height: fit-content;
+}
 .booking-blurb {
   text-align: justify;
   display: flex;
