@@ -16,10 +16,10 @@
   background-color: #e5cb7a;
   position: relative;
   left: 50%;
-  top: 50px;
+  // top: 50px;
   transform: translate(-50%, -50%);
-  height: 100px;
-  width: 300px;
+  height: 39%;
+  width: 94%;
   border-radius: 200px 200px 0 0;
 }
 

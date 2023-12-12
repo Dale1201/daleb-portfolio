@@ -11,8 +11,8 @@ import AboutMe from "./components/sections/AboutMe.vue";
   <MainHeader />
   <Home />
   <AboutMe />
-  <Experience />
-  <Projects />
+  <!-- <Experience /> -->
+  <!-- <Projects /> -->
   <Techstack />
 </template>
 

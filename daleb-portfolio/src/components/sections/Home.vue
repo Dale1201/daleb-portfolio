@@ -1,6 +1,7 @@
 <script setup>
 import WebsiteLogo from "../UI/WebsiteLogo.vue";
 import Burger from "../UI/burger/Burger.vue";
+import Pickle from "../UI/burger/Pickle.vue";
 </script>
 
 <template>
@@ -17,15 +18,15 @@ import Burger from "../UI/burger/Burger.vue";
         </div>
       </div>
     </div>
+    <div class="footer">
+      <Pickle />
+      <Burger />
+      <Pickle />
+    </div>
   </section>
 </template>
 
 <style scoped lang="scss">
-.burger {
-  position: absolute;
-  bottom: 0;
-  width: 2rem;
-}
 section {
   border-bottom: 1px solid $dark-text;
   display: flex;
@@ -115,6 +116,31 @@ h1 {
   }
   @media (min-width: 60rem) {
     max-width: 40rem;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 6.5rem;
+  display: flex;
+  gap: 2rem;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 5px;
+
+  .pickle {
+    animation: pickleAnimation 20s infinite linear;
+    position: relative;
+    left: -30%;
+  }
+  .burger {
+    width: 5rem;
+    animation: burgerAnimation 3s linear infinite running, moveAcrossScreen 26s linear infinite running;
+    height: 4rem;
+    position: relative;
   }
 }
 </style>

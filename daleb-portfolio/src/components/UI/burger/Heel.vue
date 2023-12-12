@@ -7,10 +7,10 @@
   background-color: #e5cb7a;
   position: relative;
   left: 50%;
-  top: 20px;
+  // top: 20px;
   transform: translate(-50%, -50%);
-  height: 70px;
-  width: 300px;
+  height: 27.45%;
+  width: 94%;
   border-radius: 0 0 50px 50px;
 }
 </style>

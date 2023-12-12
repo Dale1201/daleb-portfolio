@@ -1,15 +1,15 @@
 <template>
-  <div class="heel"></div>
+  <div class="tomato"></div>
 </template>
 
 <style scoped lang="scss">
-.heel {
+.tomato {
   background-color: #ec3521;
   position: relative;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 15px;
-  width: 300px;
+  height: 6%;
+  width: 94%;
   border-radius: 5px;
 }
 </style>

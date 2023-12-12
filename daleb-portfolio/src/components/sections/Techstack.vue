@@ -13,6 +13,7 @@ import Burger from "../UI/burger/Burger.vue";
 section {
   border-bottom: 1px solid $dark-text;
   min-height: 40rem;
+  padding-left: 2rem;
 }
 h1 {
   @include heading;

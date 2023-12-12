@@ -84,3 +84,57 @@
     transform: rotateY(360deg);
   }
 }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(160deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pickleAnimation {
+  0% {
+    transform: translateX(0) rotate(0);
+  }
+  100% {
+    transform: translateX(100vw) rotate(1800deg);
+  }
+}
+
+@keyframes burgerAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px) scale3d(0.9, 1.1, 1);
+  }
+  100% {
+    transform: translateY(0) scale3d(1.1, 0.9, 1);
+  }
+}
+
+// @keyframes jump {
+//   0% {
+//     transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+//   }
+//   40% {
+//     transform: translate3d(0, 30%, 0) scale3d(0.7, 1.5, 1);
+//   }
+//   100% {
+//     transform: translate3d(0, 100%, 0) scale3d(1.5, 0.7, 1);
+//   }
+// }
+
+@keyframes moveAcrossScreen {
+  0% {
+    left: -30%;
+  }
+  100% {
+    left: 100%;
+  }
+}
