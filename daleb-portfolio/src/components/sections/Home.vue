@@ -132,7 +132,7 @@ h1 {
   padding-bottom: 5px;
 
   .pickle {
-    animation: pickleAnimation 20s infinite linear;
+    animation: pickleAnimation 20s infinite linear, moveAcrossScreen 26s linear infinite running;
     position: relative;
     left: -30%;
   }

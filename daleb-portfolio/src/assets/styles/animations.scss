@@ -99,10 +99,10 @@
 
 @keyframes pickleAnimation {
   0% {
-    transform: translateX(0) rotate(0);
+    transform: rotate(0);
   }
   100% {
-    transform: translateX(100vw) rotate(1800deg);
+    transform: rotate(1800deg);
   }
 }
 
