@@ -26,9 +26,9 @@ const carouselItems = ref([
     image: "/anywise/chrisd.png",
   },
   {
-    title: "Placeholder",
-    text: "Placeholder",
-    image: "/placeholder.webp",
+    title: "Ajay Usha - Data Scientist",
+    text: "Working with Dale has been a remarkable experience. His positive attitude shines through in every task, turning challenges into opportunities. Dale's dedication is unparalleled, always going above and beyond to ensure quality and timely delivery. Dale is truly a valuable asset to any team, bringing energy, fun, commitment, and a drive for excellence.",
+    image: "/anywise/ajay.png",
   },
 ]);
 
