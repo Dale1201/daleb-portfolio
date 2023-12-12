@@ -17,7 +17,7 @@ const carouselIndex = ref(0);
 const carouselItems = ref([
   {
     title: "Shane Arnold - Senior Architect",
-    text: "Dale is amazing, Dale is amazing. Dale is amazing. Dale is amazing. Dale is amazing. Dale is amazing",
+    text: "Dale is a great coworker, he is always willing to help and has a great attitude. He is a great asset to any team.",
     image: "/anywise/shane.png",
   },
   {
