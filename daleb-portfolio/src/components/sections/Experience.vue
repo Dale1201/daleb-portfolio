@@ -17,13 +17,8 @@ const carouselIndex = ref(0);
 const carouselItems = ref([
   {
     title: "Shane Arnold - Senior Architect",
-    text: "Dale is a great coworker, he is always willing to help and has a great attitude. He is a great asset to any team.",
+    text: "Dale is always positive in attitude and willing to help others within the team environment. His friendly disposition was always a joy during our daily work routine.",
     image: "/anywise/shane.png",
-  },
-  {
-    title: "Christopher Dennis - Senior Consultant",
-    text: "Dale is a ball of sunshine",
-    image: "/anywise/chrisd.png",
   },
   {
     title: "Ajay Usha - Data Scientist",
@@ -34,17 +29,8 @@ const carouselItems = ref([
 
 function incrementCarousel() {
   carouselIndex.value++;
-
   if (carouselIndex.value > carouselItems.value.length - 1) {
     carouselIndex.value = 0;
-  }
-}
-
-function decrementCarousel() {
-  carouselIndex.value--;
-
-  if (carouselIndex.value < 0) {
-    carouselIndex.value = carouselItems.value.length - 1;
   }
 }
 </script>
