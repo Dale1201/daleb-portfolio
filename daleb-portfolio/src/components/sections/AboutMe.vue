@@ -31,7 +31,7 @@
     </div>
 
     <p class="about-me-text">
-      I am <span>Software Engineering</span> and <span>Statistics</span> graduate. <br /><br />
+      I am a <span>Software Engineering</span> and <span>Statistics</span> graduate. <br /><br />
       I am most proficient with Frontend technologies but my goal is to continue learning and become a more well rounded
       Software Engineer. <br /><br />
       I am currently looking for a graduate role in <span>Software Engineering</span> where I can work with a team of
