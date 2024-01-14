@@ -20,7 +20,27 @@ const logo = computed(() => {
   }
 });
 
+// Mobile Nav colour logic
+const mobileNavBackgroundColour = computed(() => {
+  if (colourScheme.value === "dark") {
+    return "rgb(32, 32, 32, 1)";
+  } else {
+    return "rgb(248, 248, 248)";
+  }
+});
+
+const mobileNavTextColour = computed(() => {
+  if (colourScheme.value === "dark") {
+    return "rgb(248, 248, 248)";
+  } else {
+    return "rgb(0, 0, 0)";
+  }
+});
+
 const mobileNavVisible = ref(false);
+function toggleMobileNav() {
+  mobileNavVisible.value = !mobileNavVisible.value;
+}
 </script>
 
 <template>
@@ -41,12 +61,22 @@ const mobileNavVisible = ref(false);
       </ul>
     </nav>
   </header>
-  <nav class="mobile-nav" v-if="mobileNavVisible">
-    <ul>
-      <li><a href="#about-me">About me</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#technologies">Technologies</a></li>
+  <nav
+    class="mobile-nav"
+    :style="{
+      'background-color': mobileNavBackgroundColour,
+    }"
+    v-if="mobileNavVisible"
+  >
+    <ul
+      :style="{
+        color: mobileNavTextColour,
+      }"
+    >
+      <li><a href="#about-me" @click="toggleMobileNav">About me</a></li>
+      <li><a href="#experience" @click="toggleMobileNav">Experience</a></li>
+      <li><a href="#projects" @click="toggleMobileNav">Projects</a></li>
+      <li><a href="#technologies" @click="toggleMobileNav">Technologies</a></li>
     </ul>
   </nav>
 </template>
@@ -109,7 +139,6 @@ header {
   z-index: 101;
   top: 0;
   left: 0;
-  background: rgb(248, 248, 248);
   width: 80%;
   height: 100vh;
 

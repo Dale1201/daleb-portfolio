@@ -6,7 +6,7 @@ let interval;
 onMounted(() => {
   interval = setInterval(() => {
     incrementCarousel();
-  }, 5000);
+  }, 8000);
 });
 
 onUnmounted(() => {

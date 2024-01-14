@@ -39,7 +39,11 @@ function incrementCarousel() {
       <InfoBadge> React </InfoBadge>
       <InfoBadge> Typescript </InfoBadge>
       <InfoBadge> HTML/CSS </InfoBadge>
-      <WebsiteLogo url="https://github.com/weather-booking-app" icon="fa-brands fa-github" class="github-logo" />
+      <WebsiteLogo
+        url="https://github.com/chessworld/weather-booking-client"
+        icon="fa-brands fa-github"
+        class="github-logo"
+      />
     </div>
 
     <div class="booking-app-content">
