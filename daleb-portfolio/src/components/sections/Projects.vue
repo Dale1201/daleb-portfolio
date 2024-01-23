@@ -58,7 +58,7 @@ function incrementCarousel() {
         </p>
         <b class="booking-blurb special-text">Introducing Mr Bluesky {{ "&nbsp;".repeat(18) }} </b>
       </div>
-      <div style="display: flex; justify-content: center">
+      <div style="display: flex; justify-content: center; min-height: 28rem">
         <div class="img-container" v-if="false">
           <img src="/weather-booking-app/wba-home.png" alt="Mr Bluesky" />
         </div>
@@ -75,6 +75,20 @@ function incrementCarousel() {
             ></span>
           </div>
         </div>
+      </div>
+    </div>
+    <div style="margin: 5rem 0 8rem 0;">
+      <h2>Youtube Clone - WIP</h2>
+      <div class="info-badge-container">
+        <InfoBadge> 2024 </InfoBadge>
+        <InfoBadge> React - Next.js </InfoBadge>
+        <InfoBadge> Nodejs </InfoBadge>
+        <InfoBadge> Firebase </InfoBadge>
+        <WebsiteLogo url="https://github.com/Dale1201/youtube-clone" icon="fa-brands fa-github" class="github-logo" />
+      </div>
+      <div style="margin-top: 2rem">
+        <p>A simple webapp with that will allow users to upload and view their videos.</p>
+        <p>React front-end and Nodejs backend with Firestore as the database</p>
       </div>
     </div>
   </section>
