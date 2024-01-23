@@ -38,63 +38,66 @@ function incrementCarousel() {
 <template>
   <section id="experience">
     <h1>Experience</h1>
-    <h2>Software Engineer Intern - Anywise</h2>
-    <div class="info-badge-container">
-      <InfoBadge> 2022 - 2023 </InfoBadge>
-      <InfoBadge> Frontend Development </InfoBadge>
-      <InfoBadge> Agile </InfoBadge>
-    </div>
-    <div class="content">
-      <p>
-        Anywise is a purpose-driven consulting company that aims to solve problems in an ethical, sustainable and
-        responsible way. At Anywise I worked in an agile team where my role included:
-      </p>
-      <ul>
-        <li>Developing front end applications in Vue.js with Typescript and SCSS</li>
-        <li>Creating and maintaining basic unit tests with Vitest framework</li>
-        <li>Taking part in Agile methodologies such as Daily Stand-ups, Sprint Planning and Retros</li>
-      </ul>
-
-      <div class="carousel" style="margin-top: 3rem">
-        <div class="carousel__content">
-          <!-- <button class="carousel_arrow" @click="decrementCarousel">&lt</button> -->
-
-          <div class="carousel__image">
-            <div class="img-container">
-              <img :src="carouselItems[carouselIndex].image" alt="carousel image" />
-            </div>
-            <h3>{{ carouselItems[carouselIndex].title }}</h3>
-          </div>
-          <div class="carousel__text">
-            <div class="start-quote">“</div>
-            <p>{{ carouselItems[carouselIndex].text }}</p>
-            <div class="end-quote">”</div>
-          </div>
-          <!-- <button class="carousel_arrow" @click="incrementCarousel">&gt</button> -->
+    <div class="experience-content">
+      <div>
+        <h2>Software Engineer Intern - Anywise</h2>
+        <div class="info-badge-container">
+          <InfoBadge> 2022 - 2023 </InfoBadge>
+          <InfoBadge> Frontend Development </InfoBadge>
+          <InfoBadge> Agile </InfoBadge>
         </div>
+        <div class="content">
+          <p>
+            Anywise is a purpose-driven consulting company that aims to solve problems in an ethical, sustainable and
+            responsible way. At Anywise I worked in an agile team where my role included:
+          </p>
+          <ul>
+            <li>Developing front end applications in Vue.js with Typescript and SCSS</li>
+            <li>Creating and maintaining basic unit tests with Vitest framework</li>
+            <li>Taking part in Agile methodologies such as Daily Stand-ups, Sprint Planning and Retros</li>
+          </ul>
 
-        <div class="carousel__dots">
-          <span
-            v-for="(item, index) in carouselItems"
-            :key="index"
-            :class="{ 'dot-active': carouselIndex === index }"
-            @click="carouselIndex = index"
-          ></span>
+          <div class="carousel" style="margin-top: 3rem">
+            <div class="carousel__content">
+              <div class="carousel__image">
+                <div class="img-container">
+                  <img :src="carouselItems[carouselIndex].image" alt="carousel image" />
+                </div>
+                <h3>{{ carouselItems[carouselIndex].title }}</h3>
+              </div>
+              <div class="carousel__text">
+                <div class="start-quote">“</div>
+                <p>{{ carouselItems[carouselIndex].text }}</p>
+                <div class="end-quote">”</div>
+              </div>
+            </div>
+
+            <div class="carousel__dots">
+              <span
+                v-for="(item, index) in carouselItems"
+                :key="index"
+                :class="{ 'dot-active': carouselIndex === index }"
+                @click="carouselIndex = index"
+              ></span>
+            </div>
+          </div>
+        </div>
+        <h2 style="padding-top: 3rem">Data Science Intern - Digicor</h2>
+        <div class="info-badge-container">
+          <InfoBadge> 2021 </InfoBadge>
+          <InfoBadge> Data Science </InfoBadge>
+          <InfoBadge> SEO </InfoBadge>
+        </div>
+        <div class="content" style="padding-bottom: 5rem">
+          <p>Digicor is a leading provider of high-performance computing solutions. At Digicor my role included:</p>
+          <ul>
+            <li>
+              Made dashboards with google data studio to assist in finding useful insights for DiGiCOR's SEO campaign
+            </li>
+            <li>Created report to assist marketing department to set benchmarks and goals.</li>
+          </ul>
         </div>
       </div>
-    </div>
-    <h2 style="padding-top: 3rem">Data Science Intern - Digicor</h2>
-    <div class="info-badge-container">
-      <InfoBadge> 2021 </InfoBadge>
-      <InfoBadge> Data Science </InfoBadge>
-      <InfoBadge> SEO </InfoBadge>
-    </div>
-    <div class="content" style="padding-bottom: 5rem">
-      <p>Digicor is a leading provider of high-performance computing solutions. At Digicor my role included:</p>
-      <ul>
-        <li>Made dashboards with google data studio to assist in finding useful insights for DiGiCOR's SEO campaign</li>
-        <li>Created report to assist marketing department to set benchmarks and goals.</li>
-      </ul>
     </div>
   </section>
 </template>
@@ -104,6 +107,9 @@ section {
   border-bottom: 1px solid $dark-text;
   min-height: 40rem;
   padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center
 }
 h1 {
   @include heading;
@@ -112,6 +118,13 @@ h1 {
 
 h2 {
   font-weight: normal;
+}
+
+.experience-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80rem;
 }
 
 .info-badge-container {

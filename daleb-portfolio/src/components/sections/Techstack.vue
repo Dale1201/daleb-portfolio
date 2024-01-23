@@ -12,10 +12,8 @@ import Burger from "../UI/burger/Burger.vue";
           <li>Vue.js</li>
           <li>React.js</li>
           <li>HTML</li>
-          <li>CSS</li>
-          <li>SCSS</li>
-          <li>Typescript</li>
-          <li>Javascript</li>
+          <li>CSS & SCSS</li>
+          <li>Javascrpt & Typescript</li>
         </ul>
       </div>
       <div class="techstack-card">
