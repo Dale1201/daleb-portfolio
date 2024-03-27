@@ -80,6 +80,31 @@ function incrementCarousel() {
           </div>
         </div>
         <div style="margin: 5rem 0 8rem 0">
+          <h2 class="link-header">
+            <a href="https://nba-dashboard-jxkcl.ondigitalocean.app/" target="_blank" rel="noopener noreferrer"
+              >NBA Archives
+              <i class="fa-solid fa-arrow-up-right-from-square fa-xs" ></i>
+            </a>
+          </h2>
+          <div class="info-badge-container">
+            <InfoBadge> 2024 </InfoBadge>
+            <InfoBadge> Vue.js </InfoBadge>
+            <InfoBadge> Django </InfoBadge>
+            <WebsiteLogo
+              url="https://github.com/Dale1201/nba-dashboard"
+              icon="fa-brands fa-github"
+              class="github-logo"
+            />
+          </div>
+          <div style="margin-top: 2rem">
+            <p>
+              A application where you can view the stats for any player in the current and past seasons, as well as
+              season leaders
+            </p>
+            <p>Vue.js front-end and Django backend</p>
+          </div>
+        </div>
+        <div style="margin: 5rem 0 8rem 0">
           <h2>Youtube Clone - WIP</h2>
           <div class="info-badge-container">
             <InfoBadge> 2024 </InfoBadge>
@@ -167,6 +192,12 @@ h2 {
   padding: 1rem;
   @media (min-width: 40rem) {
     padding: 0;
+  }
+}
+
+.link-header {
+  a {
+    text-decoration: none;
   }
 }
 
