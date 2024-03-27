@@ -83,7 +83,7 @@ function incrementCarousel() {
           <h2 class="link-header">
             <a href="https://nba-dashboard-jxkcl.ondigitalocean.app/" target="_blank" rel="noopener noreferrer"
               >NBA Archives
-              <i class="fa-solid fa-arrow-up-right-from-square fa-xs" ></i>
+              <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i>
             </a>
           </h2>
           <div class="info-badge-container">
