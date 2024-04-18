@@ -90,6 +90,7 @@ function incrementCarousel() {
             <InfoBadge> 2024 </InfoBadge>
             <InfoBadge> Vue.js </InfoBadge>
             <InfoBadge> Django </InfoBadge>
+            <InfoBadge> Web Scraping </InfoBadge>
             <WebsiteLogo
               url="https://github.com/Dale1201/nba-dashboard"
               icon="fa-brands fa-github"
