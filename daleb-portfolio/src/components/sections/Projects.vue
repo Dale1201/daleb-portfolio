@@ -81,7 +81,7 @@ function incrementCarousel() {
         </div>
         <div style="margin: 5rem 0 8rem 0">
           <h2 class="link-header">
-            <a href="https://nba-dashboard-jxkcl.ondigitalocean.app/" target="_blank" rel="noopener noreferrer"
+            <a href="https://nba-archives.live" target="_blank" rel="noopener noreferrer"
               >NBA Archives
               <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i>
             </a>
