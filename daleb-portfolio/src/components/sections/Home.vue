@@ -1,7 +1,40 @@
 <script setup>
+import { onMounted } from "vue";
+import gsap from "gsap";
 import WebsiteLogo from "../UI/WebsiteLogo.vue";
 import Burger from "../UI/burger/Burger.vue";
 import Pickle from "../UI/burger/Pickle.vue";
+
+onMounted(() => {
+  // gsap.from(".dale-text", {
+  //   duration: 1,
+  //   x: -100,
+  //   opacity: 0,
+  //   ease: "bounce",
+  //   delay: 1.5,
+  // });
+  // gsap.from(".social-header", {
+  //   duration: 1,
+  //   x: 100,
+  //   opacity: 0,
+  //   ease: "bounce",
+  //   delay: 1.5,
+  // });
+  // gsap.from(".logos", {
+  //   duration: 1,
+  //   x: 100,
+  //   opacity: 0,
+  //   ease: "bounce",
+  //   delay: 1.5,
+  // });
+  // gsap.from(".footer", {
+  //   duration: 1,
+  //   y: 100,
+  //   opacity: 0,
+  //   ease: "bounce",
+  //   delay: 1.5,
+  // });
+});
 </script>
 
 <template>
@@ -123,7 +156,7 @@ h1 {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 6.5rem;
+  height: 6.8rem;
   display: flex;
   gap: 2rem;
   overflow: hidden;
@@ -132,14 +165,14 @@ h1 {
   padding-bottom: 5px;
 
   .pickle {
-    animation: pickleAnimation 20s infinite linear, moveAcrossScreen 26s linear infinite running;
+    animation: pickleAnimation 17s infinite linear, moveAcrossScreen 20s linear infinite running;
     position: relative;
     left: -30%;
   }
   .burger {
     width: 5rem;
-    animation: burgerAnimation 3s linear infinite running, moveAcrossScreen 26s linear infinite running;
-    height: 4rem;
+    height: 4.7rem;
+    animation: burgerAnimation 2s linear infinite running, moveAcrossScreen 20s linear infinite running;
     position: relative;
   }
 }

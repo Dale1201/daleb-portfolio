@@ -12,44 +12,61 @@
       <div class="sesame"></div>
       <div class="sesame"></div>
     </div>
-    <div class="lettuce"></div>
     <div class="tomato"></div>
-    <div class="cheese"></div>
-    <div class="patty"></div>
+    <div class="patty">
+      <div class="cheese"></div>
+    </div>
+    <div class="lettuce">
+      <div class="lettuce__circle"></div>
+      <div class="lettuce__circle"></div>
+      <div class="lettuce__circle"></div>
+      <div class="lettuce__circle"></div>
+      <div class="lettuce__circle"></div>
+      <div class="lettuce__circle"></div>
+    </div>
     <div class="heel"></div>
+    <div class="triangle"></div>
   </div>
 </template>
 
 <style scoped lang="scss">
 .burger {
   width: 320px;
-  height: 255px;
+  height: 280px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 1;
 }
 
 .crown {
   background-color: #e5cb7a;
   position: relative;
-  height: 39%;
+  height: 35%;
   width: 94%;
   border-radius: 200px 200px 0 0;
 }
 
 .lettuce {
   background-color: #32c704;
-  height: 4%;
-  width: 94%;
-  border-radius: 0 0 50px 50px;
+  display: flex;
+  border-radius: 5px 5px 0 0;
+
+
+  .lettuce__circle {
+    background-color: #32c704;
+    height: 8px;
+    width: 14px;
+    border-radius: 50%;
+    position: relative;
+    top: 50%;
+  }
 }
 
 .tomato {
   background-color: #ec3521;
-  height: 6%;
-  width: 94%;
-  border-radius: 5px;
+  height: 12%;
+  width: 100%;
+  border-radius: 2px;
 }
 
 .cheese {
@@ -60,17 +77,26 @@
 }
 
 .patty {
-  background-color: #450101;
-  height: 20%;
-  width: 100%;
-  border-radius: 40px 40px 20px 20px;
+  background-color: #6a0606;
+  height: 18%;
+  width: 102%;
+  border-radius: 4px;
+
+  .cheese {
+    background-color: #ffd766;
+    width: 98%;
+    // clip-path: polygon(100% 0, 66% 29%, 29% 100%, 18% 43%, 0 0);
+    clip-path: polygon(85% 1%, 64% 24%, 29% 100%, 18% 43%, 0 0);
+    height: 70%;
+    position: relative;
+  }
 }
 
 .heel {
   background-color: #e5cb7a;
-  height: 27.45%;
-  width: 94%;
-  border-radius: 0 0 50px 50px;
+  height: 20%;
+  width: 92%;
+  border-radius: 0 0 5px 5px;
 }
 .sesame {
   background-color: #fff2cc;
