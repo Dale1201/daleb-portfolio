@@ -30,6 +30,8 @@
 </template>
 
 <style scoped lang="scss">
+$border-width: 1px;
+
 .burger {
   width: 320px;
   height: 280px;
@@ -39,17 +41,19 @@
 }
 
 .crown {
-  background-color: #e5cb7a;
+  background-color: #F1BC19;
   position: relative;
   height: 35%;
   width: 94%;
   border-radius: 200px 200px 0 0;
+  border: $border-width solid #472B29;
 }
 
 .lettuce {
   background-color: #32c704;
   display: flex;
   border-radius: 5px 5px 0 0;
+  border: $border-width solid #472B29;
 
 
   .lettuce__circle {
@@ -59,6 +63,7 @@
     border-radius: 50%;
     position: relative;
     top: 50%;
+    border-bottom: $border-width solid #472B29;
   }
 }
 
@@ -67,6 +72,8 @@
   height: 12%;
   width: 100%;
   border-radius: 2px;
+  border-left: $border-width solid #472B29;
+  border-right: $border-width solid #472B29;
 }
 
 .cheese {
@@ -81,6 +88,7 @@
   height: 18%;
   width: 102%;
   border-radius: 4px;
+  border: $border-width solid #472B29;
 
   .cheese {
     background-color: #ffd766;
@@ -93,10 +101,11 @@
 }
 
 .heel {
-  background-color: #e5cb7a;
+  background-color: #F1BC19;
   height: 20%;
   width: 92%;
   border-radius: 0 0 5px 5px;
+  border: $border-width solid #472B29;
 }
 .sesame {
   background-color: #fff2cc;
