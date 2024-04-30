@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted } from "vue";
+import { onMounted, ref } from "vue";
 import gsap from "gsap";
 import WebsiteLogo from "../UI/WebsiteLogo.vue";
 import Burger from "../UI/burger/Burger.vue";
@@ -35,6 +35,11 @@ onMounted(() => {
   //   delay: 1.5,
   // });
 });
+
+const isBurgerShot = ref(false);
+function shootBurger() {
+  isBurgerShot.value = true;
+}
 </script>
 
 <template>
@@ -53,7 +58,7 @@ onMounted(() => {
     </div>
     <div class="footer">
       <Pickle />
-      <Burger />
+      <Burger @click="shootBurger" :is-shot="isBurgerShot" :class="{'burger-shot': isBurgerShot}" />
       <Pickle />
     </div>
   </section>
@@ -171,8 +176,12 @@ h1 {
   .burger {
     width: 5rem;
     height: 4.7rem;
-    animation: burgerAnimation 2s linear infinite running, moveAcrossScreen 20s linear infinite running;
     position: relative;
+    animation: burgerAnimation 2s linear infinite running, moveAcrossScreen 20s linear infinite running
+  }
+  .burger-shot {
+    animation-play-state: paused;
+    transform: translateY(0) ;
   }
 }
 </style>
