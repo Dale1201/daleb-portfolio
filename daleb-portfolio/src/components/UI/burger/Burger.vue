@@ -41,7 +41,7 @@ $border-width: 1px;
 }
 
 .crown {
-  background-color: #F1BC19;
+  background-color: #FCBA7F;
   position: relative;
   height: 35%;
   width: 94%;
@@ -50,14 +50,14 @@ $border-width: 1px;
 }
 
 .lettuce {
-  background-color: #32c704;
+  background-color: #60BE92;
   display: flex;
   border-radius: 5px 5px 0 0;
   border: $border-width solid #472B29;
 
 
   .lettuce__circle {
-    background-color: #32c704;
+    background-color: #60BE92;
     height: 8px;
     width: 14px;
     border-radius: 50%;
@@ -68,7 +68,7 @@ $border-width: 1px;
 }
 
 .tomato {
-  background-color: #ec3521;
+  background-color: #F15B6C;
   height: 12%;
   width: 100%;
   border-radius: 2px;
@@ -84,14 +84,14 @@ $border-width: 1px;
 }
 
 .patty {
-  background-color: #6a0606;
+  background-color: #B77748;
   height: 18%;
   width: 102%;
   border-radius: 4px;
   border: $border-width solid #472B29;
 
   .cheese {
-    background-color: #ffd766;
+    background-color: #FEF6AA;
     width: 98%;
     // clip-path: polygon(100% 0, 66% 29%, 29% 100%, 18% 43%, 0 0);
     clip-path: polygon(85% 1%, 64% 24%, 29% 100%, 18% 43%, 0 0);
@@ -101,7 +101,7 @@ $border-width: 1px;
 }
 
 .heel {
-  background-color: #F1BC19;
+  background-color: #FCBA7F;
   height: 20%;
   width: 92%;
   border-radius: 0 0 5px 5px;
