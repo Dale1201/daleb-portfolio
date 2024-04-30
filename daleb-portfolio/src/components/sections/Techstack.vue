@@ -20,6 +20,7 @@ import Burger from "../UI/burger/Burger.vue";
         <h2>Backend</h2>
         <ul>
           <li>Python</li>
+          <li>Go</li>
           <li>Node.js</li>
           <li>Java</li>
           <li>SQL</li>
