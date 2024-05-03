@@ -147,7 +147,6 @@ section {
 
 h1 {
   @include heading;
-  text-align: center;
 }
 
 h2 {

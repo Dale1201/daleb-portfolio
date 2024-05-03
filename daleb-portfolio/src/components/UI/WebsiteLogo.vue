@@ -10,7 +10,7 @@ defineProps({
 </script>
 
 <template>
-  <a :href="url"><i :class="icon" :style="{ color: colour }"></i></a>
+  <a :href="url" target="_blank" rel="noopener noreferrer"><i :class="icon" :style="{ color: colour }"></i></a>
 </template>
 
 <style scoped lang="scss">

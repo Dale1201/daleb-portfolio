@@ -18,9 +18,10 @@ onMounted(() => {
   const t1 = gsap.timeline({
     scrollTrigger: {
       trigger: ".experience",
-      start: "top center", 
-      end: "bottom center",
+      start: "top 70%", 
+      end: "50% 70%",
       scrub: 1,
+      // toggleActions: "restart pause reverse pause",
     }
   })
 

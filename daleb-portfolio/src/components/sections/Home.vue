@@ -48,7 +48,7 @@ function shootBurger() {
       <div class="about-me">
         <h3>Hello I'm</h3>
         <h1 class="dale-text">Dale Beniga</h1>
-        <h3>Software Engineer</h3>
+        <h3>A Software Engineer and Statistics Graduate</h3>
         <h2 class="social-header">Connect with me!</h2>
         <div style="display: flex; gap: 1rem">
           <WebsiteLogo url="//www.linkedin.com/in/dale-beniga-800871175" icon="fa-brands fa-linkedin" class="logos" />
@@ -56,11 +56,11 @@ function shootBurger() {
         </div>
       </div>
     </div>
-    <div class="footer">
+    <!-- <div class="footer">
       <Pickle />
       <Burger @click="shootBurger" :is-shot="isBurgerShot" :class="{'burger-shot': isBurgerShot}" />
       <Pickle />
-    </div>
+    </div> -->
   </section>
 </template>
 
@@ -103,6 +103,7 @@ h1 {
 
   h3 {
     font-weight: 500;
+    text-align: center;
   }
 
   p span {
