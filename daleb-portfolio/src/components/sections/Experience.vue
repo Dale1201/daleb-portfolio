@@ -12,6 +12,13 @@ onMounted(() => {
 onUnmounted(() => {
   clearInterval(interval);
 });
+
+// More info visibility
+const moreInfoVisible = ref([false, false]);
+function toggleMoreInfo(index) {
+  moreInfoVisible.value[index] = !moreInfoVisible.value[index];
+}
+
 // Carousel logic
 const carouselIndex = ref(0);
 const carouselItems = ref([
@@ -39,23 +46,49 @@ function incrementCarousel() {
   <section id="experience">
     <h1>Experience</h1>
     <div class="experience-content">
-      <div>
-        <h2>Software Engineer Intern</h2>
-        <a href="https://www.anywise.com.au/" target="_blank" rel="noopener noreferrer">Anywise</a>
-        <p>2022 - 2023</p>
-        <div class="info-badge-container">
-          <InfoBadge> Frontend Development </InfoBadge>
-          <InfoBadge> Agile </InfoBadge>
+      <div @click="toggleMoreInfo(0)">
+        <div class="summary-info">
+          <div>
+            <h2>Software Engineer Intern</h2>
+            <a href="https://www.anywise.com.au/" target="_blank" rel="noopener noreferrer">Anywise</a>
+            <div class="info-badge-container">
+              <InfoBadge> Frontend Development </InfoBadge>
+              <InfoBadge> Agile </InfoBadge>
+            </div>
+          </div>
+          <p class="year">2022 - 2023</p>
         </div>
+        <Transition name="more-info" mode="out-in">
+          <div v-if="moreInfoVisible[0]" class="more-info">
+            <ul>
+              <li>Developed a front end application in Vue.js with Typescript and SCSS</li>
+              <li>Created and maintained basic unit tests with Vitest framework</li>
+              <li>Took part in Agile methodologies such as Daily Stand-ups, Sprint Planning and Retros</li>
+            </ul>
+          </div>
+        </Transition>
       </div>
-      <div>
-        <h2>Data Science Intern</h2>
-        <a href="https://www.digicor.com.au/" target="_blank" rel="noopener noreferrer">Digicor</a>
-        <p>2021</p>
-        <div class="info-badge-container">
-          <InfoBadge> Data Science </InfoBadge>
-          <InfoBadge> SEO </InfoBadge>
+      <div @click="toggleMoreInfo(1)">
+        <div class="summary-info">
+          <div>
+            <h2>Data Science Intern</h2>
+            <a href="https://www.digicor.com.au/" target="_blank" rel="noopener noreferrer">Digicor</a>
+            <div class="info-badge-container">
+              <InfoBadge> Data Science </InfoBadge>
+              <InfoBadge> SEO </InfoBadge>
+            </div>
+          </div>
+          <p class="year">2021</p>
         </div>
+        <Transition name="more-info">
+          <div class="more-info" v-if="moreInfoVisible[1]">
+            <ul>
+              <li>Created dashboards with google data studio to assist in finding useful insights for DiGiCOR's SEO campaign</li>
+              <li>Wrote reports to assist marketing department to set benchmarks and goals.</li>
+            </ul>
+          
+          </div>
+        </Transition>
       </div>
     </div>
   </section>
@@ -65,13 +98,13 @@ function incrementCarousel() {
 section {
   border-bottom: 1px solid var(--clr-border);
   min-height: 40rem;
-  padding: 0 2rem;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
 
 h1 {
   @include heading;
+  padding-left: 1rem;
 }
 
 h2 {
@@ -87,9 +120,21 @@ h2 {
 }
 
 .experience-content > div {
+  border: 1px solid var(--clr-border-faint);
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  transition: all 0.2s;
+
+  &:hover {
+    scale: 1.01;
+  }
+}
+
+.summary-info {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  padding: 2.5rem 0;
 
   h2 {
     @include sub-heading;
@@ -97,13 +142,43 @@ h2 {
 
   a {
     text-decoration: none;
+    font-style: italic;
+    margin-bottom: 0.5rem;
   }
+
+  .year {
+    font-size: 1.5rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+  }
+  @media (min-width: 40rem) {
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.more-info {
+  padding-bottom: 1rem;
+}
+
+.more-info-enter-active,
+.more-info-leave-active {
+  transition: all 0.5s ease;
+}
+
+.more-info-enter-from,
+.more-info-leave-to {
+  opacity: 0;
+  transform: translateY(-2rem);
 }
 
 .info-badge-container {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  margin-top: 0.5rem;
 }
 
 .content {
@@ -181,9 +256,7 @@ h2 {
 }
 </style>
 
-
-
-    <!-- <div class="experience-content">
+<!-- <div class="experience-content">
       <div>
         <h2>Software Engineer Intern - Anywise</h2>
         <div class="info-badge-container">

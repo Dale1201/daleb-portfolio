@@ -6,6 +6,7 @@
   --clr-text: #ecdfe1;
   --clr-background: #100a0b;
   --clr-border: #ecdfe1;
+  --clr-border-faint: #cbc7c89b;
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -95,7 +96,7 @@ select {
 @media (prefers-color-scheme: light) {
   :root {
     --clr-text: #201315;
-    --clr-background: #fffaee;
+    --clr-background: #fffcf4;
 
     color: var(--clr-text);
     background-color: var(--clr-background);

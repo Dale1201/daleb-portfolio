@@ -16,6 +16,10 @@
   width: fit-content;
   padding: 0 0.5rem;
   opacity: 0.8;
+
+  @media (prefers-color-scheme: light) {
+    border-color: rgba(0, 0, 0, 0.2);
+  }
 }
 
 .info-badge__content {
