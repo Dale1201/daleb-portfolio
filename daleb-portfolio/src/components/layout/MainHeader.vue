@@ -99,7 +99,7 @@ header {
   display: flex;
   align-items: center;
   padding: 0.5rem 0.5rem;
-  border-bottom: 1px solid var(--clr-text);
+  border-bottom: 1px solid var(--clr-border);
 }
 
 .header__logo {

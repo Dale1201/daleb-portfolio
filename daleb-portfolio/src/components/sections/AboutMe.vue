@@ -42,7 +42,7 @@
 
 <style scoped lang="scss">
 section {
-  border-bottom: 1px solid var(--clr-text);
+  border-bottom: 1px solid var(--clr-border);
   min-height: 40rem;
 }
 h1 {
