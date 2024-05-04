@@ -120,6 +120,9 @@ h2 {
 }
 
 .experience-content > div {
+  width: 100%;
+  max-width: 80rem;
+  margin-inline: auto;
   border: 1px solid var(--clr-border-faint);
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;

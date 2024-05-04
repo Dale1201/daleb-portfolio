@@ -25,9 +25,25 @@ onMounted(() => {
     }
   })
 
+  const t2 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".projects",
+      start: "top 70%", 
+      end: "50% 70%",
+      scrub: 1,
+    }
+  })
+
   t1.from(".experience", {
     duration: 1,
     x: -100,
+    opacity: 0,
+    ease: "ease-in",
+  })
+
+  t2.from(".projects", {
+    duration: 1,
+    x: 100,
     opacity: 0,
     ease: "ease-in",
   })
@@ -41,7 +57,7 @@ onMounted(() => {
   <Home />
   <!-- <AboutMe /> -->
   <Experience class="experience" />
-  <Projects />
+  <Projects class="projects"  />
   <Techstack />
 </template>
 

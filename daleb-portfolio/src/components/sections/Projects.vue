@@ -27,16 +27,16 @@ const projects = ref([
   {
     name: "Mr Bluesky",
     year: 2023,
-    tech: ["Mobile", "React", "Typescript", "HTML/CSS"],
+    tech: ["Mobile", "React", "Typescript"],
     github: "https://github.com/chessworld/weather-booking-client",
     image: "/projects/mr-bluesky.PNG",
   },
   {
     name: "Youtube Clone",
     year: 2024,
-    tech: ["React - Next.js", "Nodejs", "Firebase"],
+    tech: ["Next.js", "Nodejs", "Firebase"],
     github: "https://github.com/Dale1201/youtube-clone",
-    image: "/projects/mr_bluesky_logo.png",
+    image: "/projects/youtube-clone.webp",
   },
 ]);
 
@@ -62,12 +62,19 @@ function incrementCarousel() {
     <h1>Projects</h1>
     <div class="projects-content">
       <div class="card" v-for="project in projects">
-        <div>
-          <h2>{{ project.name }}</h2>
-          <div class="info-badge-container">
-            <InfoBadge v-for="tech in project.tech" :key="tech">{{ tech }}</InfoBadge>
+        <div class="card-info-content">
+          <div>
+            <h2>{{ project.name }}</h2>
+            <div class="info-badge-container">
+              <InfoBadge v-for="tech in project.tech" :key="tech">{{ tech }}</InfoBadge>
+              <WebsiteLogo :url="project.github" icon="fa-brands fa-github" class="github-logo" />
+            </div>
           </div>
-          <WebsiteLogo :url="project.github" icon="fa-brands fa-github" class="github-logo" />
+          <div v-if="project.website">
+            <a class="visit-link" :href="project.website" target="_blank" rel="noopener noreferrer"
+              >Visit <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
         </div>
         <div class="img-container">
           <img :src="project.image" alt="Project image" />
@@ -83,24 +90,42 @@ section {
   min-height: 40rem;
 }
 
-.projects-content {
-}
 
 .card {
   border: 1px solid var(--clr-border);
   border-radius: 12px;
-  margin: 1rem 0;
+  margin: 2rem 0;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: fit-content;
+  max-width: 27rem;
   margin-inline: auto;
 
   .img-container {
     margin-inline: auto;
     border-radius: 0 0 6px 6px;
     max-width: 20rem;
+    height: 20rem;
+
     overflow: hidden;
+  }
+}
+
+.card-info-content {
+  display: flex;
+  padding: 1rem;
+
+  .visit-link {
+    text-decoration: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    i {
+      color: var(--clr-background);
+      background-color: var(--clr-primary);
+      padding: 6px;
+      border-radius: 50%;
+    }
   }
 }
 
