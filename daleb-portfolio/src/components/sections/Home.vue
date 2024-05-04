@@ -66,7 +66,7 @@ function shootBurger() {
 
 <style scoped lang="scss">
 section {
-  border-bottom: 1px solid $dark-text;
+  border-bottom: 1px solid var(--clr-text);
   display: flex;
   justify-content: center;
   align-items: center;

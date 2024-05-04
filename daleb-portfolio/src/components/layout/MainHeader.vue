@@ -99,7 +99,7 @@ header {
   display: flex;
   align-items: center;
   padding: 0.5rem 0.5rem;
-  border-bottom: 1px solid $dark-text;
+  border-bottom: 1px solid var(--clr-text);
 }
 
 .header__logo {
@@ -117,7 +117,7 @@ header {
   transition: color 0.2s ease-in-out;
 
   &:hover {
-    color: $clr-primary;
+    color: var(--clr-primary);
   }
 }
 

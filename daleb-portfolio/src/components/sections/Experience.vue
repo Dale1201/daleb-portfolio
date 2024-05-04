@@ -63,7 +63,7 @@ function incrementCarousel() {
 
 <style scoped lang="scss">
 section {
-  border-bottom: 1px solid $dark-text;
+  border-bottom: 1px solid var(--clr-text);
   min-height: 40rem;
   padding: 0 2rem;
   display: flex;
@@ -140,7 +140,7 @@ h2 {
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
-  color: $clr-secondary;
+  color: var(--clr-secondary);
 
   @media (max-width: 40rem) {
     display: none;
@@ -151,7 +151,7 @@ h2 {
   font-size: 4rem;
   height: 3.5rem;
   font-weight: 700;
-  color: $clr-accent;
+  color: var(--clr-accent);
 }
 .start-quote {
   @extend %quote;
@@ -172,11 +172,11 @@ h2 {
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50%;
-    background-color: $dark-text;
+    background-color: var(--clr-text);
     cursor: pointer;
   }
   .dot-active {
-    background-color: $clr-primary;
+    background-color: var(--clr-primary);
   }
 }
 </style>

@@ -1,7 +1,7 @@
 @mixin heading {
   font-weight: 400;
   font-size: 2.5rem;
-  color: $clr-primary;
+  color: var(--clr-primary);
   margin-bottom: 1rem;
   width: 100%;
 }
@@ -9,10 +9,10 @@
 @mixin sub-heading {
   font-weight: 400;
   font-size: 1.5rem;
-  color: $clr-primary;
+  color: var(--clr-primary);
 }
 
 @mixin special-text {
-  color: $clr-secondary;
+  color: var(--clr-secondary);
   font-weight: 500;
 }

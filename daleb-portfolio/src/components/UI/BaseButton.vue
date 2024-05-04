@@ -6,8 +6,8 @@
 
 <style scoped lang="scss">
 button {
-  background: $clr-primary;
-  color: $dark-text;
+  background: var(--clr-primary);
+  color: var(--clr-text);
   border: none;
   cursor: pointer;
   transition: color 0.3s ease;

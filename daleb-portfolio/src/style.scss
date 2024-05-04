@@ -1,11 +1,18 @@
 :root {
+  /* Colors */
+  --clr-primary: #b22727;
+  --clr-secondary: #963f04;
+  --clr-accent: #f8cb2e;
+  --clr-text: #ecdfe1;
+  --clr-background: #100a0b;
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: $dark-text;
-  background-color: $dark-background;
+  color: var(--clr-text);
+  background-color: var(--clr-background);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -39,10 +46,10 @@ ol[role="list"] {
   list-style: none;
 }
 a {
-  color: $dark-text;
+  color: var(--clr-text);
 
   &:hover {
-    color: $clr-primary;
+    color: var(--clr-primary);
   }
 }
 
@@ -86,17 +93,21 @@ select {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: $light-text;
-    background-color: $light-background;
+    --clr-text: #201315;
+    --clr-background: #fffaee;
+
+    color: var(--clr-text);
+    background-color: var(--clr-background);
+
   }
   a {
-    color: $light-text;
+    color: var(--clr-text);
 
     &:hover {
-      color: $clr-primary;
+      color: var(--clr-primary);
     }
   }
-  button {
-    background-color: #f9f9f9;
-  }
+  // button {
+  //   background-color: #f9f9f9;
+  // }
 }

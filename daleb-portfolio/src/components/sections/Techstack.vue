@@ -42,7 +42,7 @@ import Burger from "../UI/burger/Burger.vue";
 
 <style scoped lang="scss">
 section {
-  border-bottom: 1px solid $dark-text;
+  border-bottom: 1px solid var(--clr-text);
   min-height: 40rem;
   padding: 0 2rem;
 }
@@ -66,7 +66,7 @@ h1 {
 
 .techstack-card {
   text-align: center;
-  border: 1px solid $clr-primary;
+  border: 1px solid var(--clr-primary);
   border-radius: 12px;
   margin: 2rem 0;
   width: clamp(20rem, 80%, 25rem);

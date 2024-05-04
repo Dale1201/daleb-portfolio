@@ -42,7 +42,7 @@
 
 <style scoped lang="scss">
 section {
-  border-bottom: 1px solid $dark-text;
+  border-bottom: 1px solid var(--clr-text);
   min-height: 40rem;
 }
 h1 {
@@ -65,7 +65,7 @@ h1 {
 }
 
 .about-me-card {
-  border: 1px solid $clr-primary;
+  border: 1px solid var(--clr-primary);
   max-width: 21rem;
   border-radius: 12px;
   width: 80%;
