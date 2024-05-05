@@ -146,7 +146,6 @@ section {
 .visit-link-container {
   width: fit-content;
   align-self: flex-end;
-  margin-bottom: -1rem;
   padding: 0.5rem 0.5rem 0 0;
 }
 
