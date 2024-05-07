@@ -19,7 +19,7 @@ onMounted(() => {
     scrollTrigger: {
       trigger: ".experience",
       start: "top 70%", 
-      end: "50% 70%",
+      end: "40% 70%",
       scrub: 1,
       // toggleActions: "restart pause reverse pause",
     }
@@ -29,8 +29,10 @@ onMounted(() => {
     scrollTrigger: {
       trigger: ".projects",
       start: "top 70%", 
-      end: "50% 70%",
+      end: "30% 70%",
       scrub: 1,
+      markers: true,
+
     }
   })
 
