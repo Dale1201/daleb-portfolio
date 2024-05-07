@@ -29,10 +29,8 @@ onMounted(() => {
     scrollTrigger: {
       trigger: ".projects",
       start: "top 70%", 
-      end: "30% 70%",
+      end: "20% 70%",
       scrub: 1,
-      markers: true,
-
     }
   })
 
