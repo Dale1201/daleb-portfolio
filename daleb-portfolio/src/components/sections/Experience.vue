@@ -2,17 +2,6 @@
 import InfoBadge from "../UI/InfoBadge.vue";
 import { onMounted, onUnmounted, ref } from "vue";
 
-let interval;
-onMounted(() => {
-  interval = setInterval(() => {
-    incrementCarousel();
-  }, 8000);
-});
-
-onUnmounted(() => {
-  clearInterval(interval);
-});
-
 // More info visibility
 const moreInfoVisible = ref([false, false]);
 function toggleMoreInfo(index) {
@@ -20,26 +9,20 @@ function toggleMoreInfo(index) {
 }
 
 // Carousel logic
-const carouselIndex = ref(0);
-const carouselItems = ref([
+const testimonialItems = ref([
   {
-    title: "Shane Arnold - Senior Architect",
+    name: "Shane Arnold",
+    title: "Senior Architect",
     text: "Dale is always positive in attitude and willing to help others within the team environment. His friendly disposition was always a joy during our daily work routine.",
     image: "/anywise/shane.png",
   },
   {
-    title: "Ajay Usha - Data Scientist",
+    name: "Ajay Usha",
+    title: "Data Scientist",
     text: "Working with Dale has been a remarkable experience. His positive attitude shines through in every task, turning challenges into opportunities. Dale's dedication is unparalleled, always going above and beyond to ensure quality and timely delivery. Dale is truly a valuable asset to any team, bringing energy, fun, commitment, and a drive for excellence.",
     image: "/anywise/ajay.png",
   },
 ]);
-
-function incrementCarousel() {
-  carouselIndex.value++;
-  if (carouselIndex.value > carouselItems.value.length - 1) {
-    carouselIndex.value = 0;
-  }
-}
 </script>
 
 <template>
@@ -65,6 +48,24 @@ function incrementCarousel() {
               <li>Created and maintained basic unit tests with Vitest framework</li>
               <li>Took part in Agile methodologies such as Daily Stand-ups, Sprint Planning and Retros</li>
             </ul>
+            <div class="carousel">
+              <div class="carousel__content" v-for="t in testimonialItems">
+                <div class="carousel__image">
+                  <div class="img-container">
+                    <img :src="t.image" alt="carousel image" />
+                  </div>
+                  <div style="line-height: normal;">
+                    <h2>{{ t.name }}</h2>
+                    <p>{{ t.title }}</p>
+                  </div>
+                </div>
+                <div class="carousel__text">
+                  <div class="start-quote">“</div>
+                  <p>{{ t.text }}</p>
+                  <div class="end-quote">”</div>
+                </div>
+              </div>
+            </div>
           </div>
         </Transition>
       </div>
@@ -83,10 +84,12 @@ function incrementCarousel() {
         <Transition name="more-info">
           <div class="more-info" v-if="moreInfoVisible[1]">
             <ul>
-              <li>Created dashboards with google data studio to assist in finding useful insights for DiGiCOR's SEO campaign</li>
+              <li>
+                Created dashboards with google data studio to assist in finding useful insights for DiGiCOR's SEO
+                campaign
+              </li>
               <li>Wrote reports to assist marketing department to set benchmarks and goals.</li>
             </ul>
-          
           </div>
         </Transition>
       </div>
@@ -190,27 +193,47 @@ h2 {
     max-width: 30rem;
   }
 }
+.carousel {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--clr-border);
+  width: fit-content;
+}
 
 .carousel__content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 23rem;
+
   @media (min-width: 40rem) {
     flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
+    gap: 3rem;
   }
 }
 
 .carousel__image {
+  display: flex;
+  flex-direction: column;
+  min-width: 7rem;
+  
   .img-container {
-    max-width: 14rem;
+    max-width: 5rem;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 300;
   }
 }
 
 .carousel__text {
-  max-width: 20rem;
+  max-width: 30rem;
 }
 
 .carousel_arrow {

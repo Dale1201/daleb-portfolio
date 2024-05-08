@@ -55,7 +55,6 @@ function toggleMobileNav() {
       </div>
       <nav class="main-nav">
         <ul>
-          <li><a href="#about-me">About me</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#technologies">Technologies</a></li>
@@ -75,7 +74,6 @@ function toggleMobileNav() {
             color: mobileNavTextColour,
           }"
         >
-          <li><a href="#about-me" @click="toggleMobileNav">About me</a></li>
           <li><a href="#experience" @click="toggleMobileNav">Experience</a></li>
           <li><a href="#projects" @click="toggleMobileNav">Projects</a></li>
           <li><a href="#technologies" @click="toggleMobileNav">Technologies</a></li>
@@ -144,7 +142,8 @@ header {
   left: 0;
   width: 80%;
   height: 100vh;
-
+  display: grid;
+  place-content: center;
   ul {
     display: flex;
     flex-direction: column;

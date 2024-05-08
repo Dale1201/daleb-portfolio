@@ -1,5 +1,5 @@
 <script setup>
-import Burger from "../UI/burger/Burger.vue";
+import BurgerFooter from '../layout/BurgerFooter.vue';
 </script>
 
 <template>
@@ -37,6 +37,7 @@ import Burger from "../UI/burger/Burger.vue";
         </ul>
       </div>
     </div>
+    <BurgerFooter />
   </section>
 </template>
 
@@ -48,7 +49,6 @@ section {
 }
 h1 {
   @include heading;
-  margin-bottom: 3rem;
 }
 
 .techstack-container {
@@ -61,6 +61,7 @@ h1 {
     justify-content: center;
     align-items: normal;
     gap: 2rem;
+    margin-top: 5rem;
   }
 }
 
@@ -68,7 +69,7 @@ h1 {
   text-align: center;
   border: 1px solid var(--clr-primary);
   border-radius: 12px;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
   width: clamp(20rem, 80%, 25rem);
 
   h2 {

@@ -38,7 +38,7 @@ onMounted(() => {
     scrollTrigger: {
       trigger: ".techstack",
       start: "top 70%", 
-      end: "50% 70%",
+      end: "30% 70%",
       scrub: 1,
     }
   })
