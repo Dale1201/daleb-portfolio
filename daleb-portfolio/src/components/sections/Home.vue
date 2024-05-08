@@ -41,7 +41,10 @@ onMounted(() => {
       <div class="about-me">
         <h3>Hello I'm</h3>
         <h1 class="dale-text">Dale Beniga</h1>
-        <h3>A Software Engineer and Statistics Graduate</h3>
+        <p>I'm a <span>Software Engineer</span> and <span>Statistics</span> Graduate. <br />
+          I love to <span>create</span> and <span>learn</span> new things. <br />
+          And I excel at solving <span>difficult</span> problems!
+        </p>
         <h2 class="social-header">Connect with me!</h2>
         <div style="display: flex; gap: 1rem">
           <WebsiteLogo url="//www.linkedin.com/in/dale-beniga-800871175" icon="fa-brands fa-linkedin" class="logos" />
@@ -94,8 +97,14 @@ h1 {
     text-align: center;
   }
 
+  p {
+    text-align: center;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
   p span {
-    @include special-text;
+    // @include special-text;
   }
 
   @media (min-width: 60rem) {

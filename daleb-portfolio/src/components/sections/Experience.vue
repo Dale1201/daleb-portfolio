@@ -1,10 +1,12 @@
 <script setup>
 import InfoBadge from "../UI/InfoBadge.vue";
-import { onMounted, onUnmounted, ref } from "vue";
+import {  ref } from "vue";
 
 // More info visibility
+const isViewMoreClicked = ref(false);
 const moreInfoVisible = ref([false, false]);
 function toggleMoreInfo(index) {
+  isViewMoreClicked.value = true;
   moreInfoVisible.value[index] = !moreInfoVisible.value[index];
 }
 
@@ -23,6 +25,7 @@ const testimonialItems = ref([
     image: "/anywise/ajay.png",
   },
 ]);
+
 </script>
 
 <template>
@@ -40,6 +43,7 @@ const testimonialItems = ref([
             </div>
           </div>
           <p class="year">2022 - 2023</p>
+          <p class="view-more-text" v-if="!isViewMoreClicked">Click to view more</p>
         </div>
         <Transition name="more-info" mode="out-in">
           <div v-if="moreInfoVisible[0]" class="more-info">
@@ -130,17 +134,17 @@ h2 {
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
   transition: all 0.2s;
-
   &:hover {
     scale: 1.01;
   }
 }
 
 .summary-info {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding: 2.5rem 0;
+  padding: 3rem 0;
 
   h2 {
     @include sub-heading;
@@ -157,6 +161,21 @@ h2 {
     font-weight: 200;
     letter-spacing: 1px;
   }
+
+  .view-more-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-inline: auto;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 200 !important;
+    opacity: 0.9;
+    color: var(--clr-primary);
+    cursor: pointer;
+  }
+
   @media (min-width: 40rem) {
     flex-direction: row;
     gap: 2rem;
@@ -196,7 +215,9 @@ h2 {
 .carousel {
   margin-top: 1.5rem;
   padding-top: 1.5rem;
-  border-top: 1px solid var(--clr-border);
+  border-top: 1px solid var(--clr-border-faint);
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
   width: fit-content;
 }
 

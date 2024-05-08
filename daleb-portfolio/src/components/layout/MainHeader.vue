@@ -44,7 +44,7 @@ function toggleMobileNav() {
 </script>
 
 <template>
-  <div>
+  <div style="position: relative;">
     <div class="backdrop" v-if="mobileNavVisible" @click="mobileNavVisible = false"></div>
     <header>
       <div class="header__logo">
@@ -92,6 +92,7 @@ function toggleMobileNav() {
   background: rgba(0, 0, 0, 0.5);
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 header {
   display: flex;

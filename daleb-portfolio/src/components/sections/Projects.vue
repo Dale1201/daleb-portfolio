@@ -96,6 +96,10 @@ section {
   min-height: 40rem;
 }
 
+.projects-content {
+  padding: 1rem;
+}
+
 .card {
   border: 1px solid var(--clr-border);
   border-radius: 12px;

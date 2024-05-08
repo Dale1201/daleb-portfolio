@@ -1,7 +1,7 @@
 :root {
   /* Colors */
-  --clr-primary: #b22727;
-  --clr-secondary: #963f04;
+  --clr-primary: #b64545;
+  --clr-secondary: #b86f3f;
   --clr-accent: #f8cb2e;
   --clr-text: #ecdfe1;
   --clr-background: #100a0b;
@@ -70,8 +70,6 @@ body {
 section {
   min-height: 93vh !important;
   overflow: hidden;
-
-
 }
 
 /* A elements that don't have a class get default styles */
@@ -99,10 +97,11 @@ select {
   :root {
     --clr-text: #201315;
     --clr-background: #fffcf4;
+    --clr-primary: #b22727;
+    --clr-secondary: #ab571f;
 
     color: var(--clr-text);
     background-color: var(--clr-background);
-
   }
   a {
     color: var(--clr-text);
