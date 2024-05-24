@@ -35,7 +35,7 @@ const testimonialItems = ref([
       <div @click="toggleMoreInfo(0)">
         <div class="summary-info">
           <div>
-            <h2>Software Engineer Intern</h2>
+            <h2>Junior Developer</h2>
             <a href="https://www.anywise.com.au/" target="_blank" rel="noopener noreferrer">Anywise</a>
             <div class="info-badge-container">
               <InfoBadge> Frontend Development </InfoBadge>
