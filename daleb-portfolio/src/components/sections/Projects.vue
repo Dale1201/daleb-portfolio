@@ -36,14 +36,7 @@ const projects = ref([
     year: 2024,
     tech: ["Go", "MySQL"],
     github: "https://github.com/Dale1201/snippet-vault"
-  },
-  {
-    name: "Youtube Clone",
-    year: 2024,
-    tech: ["Next.js", "Nodejs", "Firebase"],
-    github: "https://github.com/Dale1201/youtube-clone",
-    image: "/projects/youtube-clone.webp",
-  },
+  }
 ]);
 
 // Carousel logic
