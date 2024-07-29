@@ -1,2 +1,9 @@
 # Portfolio README
-My personal portfolio using Vuejs, Typescript and SCSS
+
+My personal portfolio showcasing my skills and experiences as a Software Engineer!
+
+Techstack:
+- Vue.js
+- SCSS
+- GSAP
+
