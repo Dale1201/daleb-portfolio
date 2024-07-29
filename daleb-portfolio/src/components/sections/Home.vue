@@ -1,38 +1,7 @@
 <script setup>
-import { onMounted, ref } from "vue";
-import gsap from "gsap";
 import WebsiteLogo from "../UI/WebsiteLogo.vue";
 
-onMounted(() => {
-  // gsap.from(".dale-text", {
-  //   duration: 1,
-  //   x: -100,
-  //   opacity: 0,
-  //   ease: "bounce",
-  //   delay: 1.5,
-  // });
-  // gsap.from(".social-header", {
-  //   duration: 1,
-  //   x: 100,
-  //   opacity: 0,
-  //   ease: "bounce",
-  //   delay: 1.5,
-  // });
-  // gsap.from(".logos", {
-  //   duration: 1,
-  //   x: 100,
-  //   opacity: 0,
-  //   ease: "bounce",
-  //   delay: 1.5,
-  // });
-  // gsap.from(".footer", {
-  //   duration: 1,
-  //   y: 100,
-  //   opacity: 0,
-  //   ease: "bounce",
-  //   delay: 1.5,
-  // });
-});
+
 </script>
 
 <template>

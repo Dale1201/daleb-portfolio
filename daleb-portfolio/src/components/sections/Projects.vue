@@ -83,7 +83,6 @@ function incrementCarousel() {
           </div>
         </div>
         <div class="img-container">
-          <!-- <img :src="project.image" alt="Project image" /> -->
         </div>
       </div>
     </div>
@@ -209,14 +208,6 @@ h2 {
   @include special-text;
 }
 
-// .img-container {
-//   max-width: 14rem;
-//   padding: 1rem;
-//   @media (min-width: 40rem) {
-//     padding: 0;
-//   }
-// }
-
 .link-header {
   a {
     text-decoration: none;
@@ -241,96 +232,3 @@ h2 {
   }
 }
 </style>
-
-<!-- <div class="projects-content">
-      <div>
-        <h2>Mr Bluesky - Weather Booking App</h2>
-        <div class="info-badge-container">
-          <InfoBadge> 2023 </InfoBadge>
-          <InfoBadge> React </InfoBadge>
-          <InfoBadge> Typescript </InfoBadge>
-          <InfoBadge> HTML/CSS </InfoBadge>
-          <WebsiteLogo
-            url="https://github.com/chessworld/weather-booking-client"
-            icon="fa-brands fa-github"
-            class="github-logo"
-          />
-        </div>
-
-        <div class="booking-app-content">
-          <div style="display: flex; flex-direction: column; align-items: center">
-            <div class="logo-container">
-              <img src="/weather-booking-app/mr_bluesky_logo.png" alt="Mr Bluesky" />
-            </div>
-            <p class="booking-blurb">
-              Have a special occasion coming up? <br />
-              Need a certain weather...? <br />
-              Then book it!
-            </p>
-            <b class="booking-blurb special-text">Introducing Mr Bluesky {{ "&nbsp;".repeat(18) }} </b>
-          </div>
-          <div style="display: flex; justify-content: center; min-height: 28rem">
-            <div class="img-container" v-if="false">
-              <img src="/weather-booking-app/wba-home.png" alt="Mr Bluesky" />
-            </div>
-            <div style="display: flex; flex-direction: column">
-              <div class="img-container">
-                <img :src="carouselItems[carouselIndex]" alt="Mr Bluesky" />
-              </div>
-              <div class="carousel__dots">
-                <span
-                  v-for="(item, index) in carouselItems"
-                  :key="index"
-                  :class="{ 'dot-active': carouselIndex === index }"
-                  @click="carouselIndex = index"
-                ></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div style="margin: 5rem 0 8rem 0">
-          <h2 class="link-header">
-            <a href="https://nba-archives.live" target="_blank" rel="noopener noreferrer"
-              >NBA Archives
-              <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i>
-            </a>
-          </h2>
-          <div class="info-badge-container">
-            <InfoBadge> 2024 </InfoBadge>
-            <InfoBadge> Vue.js </InfoBadge>
-            <InfoBadge> Django </InfoBadge>
-            <InfoBadge> Web Scraping </InfoBadge>
-            <WebsiteLogo
-              url="https://github.com/Dale1201/nba-dashboard"
-              icon="fa-brands fa-github"
-              class="github-logo"
-            />
-          </div>
-          <div style="margin-top: 2rem">
-            <p>
-              A application where you can view the stats for any player in the current and past seasons, as well as
-              season leaders
-            </p>
-            <p>Vue.js front-end and Django backend</p>
-          </div>
-        </div>
-        <div style="margin: 5rem 0 8rem 0">
-          <h2>Youtube Clone - WIP</h2>
-          <div class="info-badge-container">
-            <InfoBadge> 2024 </InfoBadge>
-            <InfoBadge> React - Next.js </InfoBadge>
-            <InfoBadge> Nodejs </InfoBadge>
-            <InfoBadge> Firebase </InfoBadge>
-            <WebsiteLogo
-              url="https://github.com/Dale1201/youtube-clone"
-              icon="fa-brands fa-github"
-              class="github-logo"
-            />
-          </div>
-          <div style="margin-top: 2rem">
-            <p>A simple webapp with that will allow users to upload and view their videos.</p>
-            <p>React front-end and Nodejs backend with Firestore as the database</p>
-          </div>
-        </div>
-      </div>
-    </div> -->

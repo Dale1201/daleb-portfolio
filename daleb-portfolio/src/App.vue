@@ -4,7 +4,6 @@ import Home from "./components/sections/Home.vue";
 import Experience from "./components/sections/Experience.vue";
 import Projects from "./components/sections/Projects.vue";
 import Techstack from "./components/sections/Techstack.vue";
-import AboutMe from "./components/sections/AboutMe.vue";
 import gsap from "gsap";
 import { onMounted } from "vue";
 
@@ -21,7 +20,6 @@ onMounted(() => {
       start: "top 70%", 
       end: "40% 70%",
       scrub: 1,
-      // toggleActions: "restart pause reverse pause",
     }
   })
 
@@ -71,7 +69,6 @@ onMounted(() => {
 <template>
   <MainHeader class="header" />
   <Home />
-  <!-- <AboutMe /> -->
   <Experience class="experience" />
   <Projects class="projects"  />
   <Techstack class="techstack" />
